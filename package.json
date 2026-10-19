@@ -1,0 +1,25 @@
+{
+  "name": "@hux_xl/bounty-triage",
+  "version": "1.0.2",
+  "description": "MCP server: judges bounty/task descriptions against NZ1Labs' battle-tested 5-criteria triage policy (evolved through 40+ real agent submissions). Returns TAKE or SKIP with reason and confidence — prevents agents from wasting cycles on lottery bounties.",
+  "license": "MIT",
+  "author": "NZ1Labs",
+  "type": "module",
+  "bin": { "nz1labs-bounty-triage": "index.js" },
+  "main": "index.js",
+  "engines": { "node": ">=18" },
+  "keywords": [
+    "mcp", "model-context-protocol", "bounty", "triage",
+    "agent", "ai-agents", "decision-making", "revenue",
+    "taskmarket", "nz1labs"
+  ],
+  "files": ["index.js", "README.md"],
+  "repository": { "type": "git", "url": "https://github.com/isoloman275-wq/bounty-triage" },
+  "homepage": "https://github.com/isoloman275-wq/bounty-triage#readme",
+  "bugs": { "url": "https://github.com/isoloman275-wq/bounty-triage/issues" },
+  "mcpHive": {
+    "deploymentType": "local",
+    "npxCommand": "npx -y @hux_xl/bounty-triage",
+    "categories": ["ai agents", "productivity", "developer-tools", "revenue"]
+  }
+}
